@@ -1,0 +1,271 @@
+.color{
+    border: 1px solid black;
+    width: 20vw;
+    height: 20vh;
+    animation: redblue 5s  infinite alternate;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+@keyframes redblue {
+    from{
+        background-color: blue;
+    }
+    to{
+        background-color: green;
+    }
+    
+}
+
+.color1{
+    border: 1px solid black;
+    width: 20vw;
+    height: 20vh;
+    animation: color1 5s   infinite alternate;
+}
+
+@keyframes color1 {
+    0%{
+        background-color: blue;
+    }
+    33%{
+        background-color: green;
+    }
+    69%{
+        background-color:yellow;
+    }
+    100%{
+        background-color: red;
+    }
+    
+}
+
+#img1{
+    width: 20vw;
+    animation: img1 5s   infinite alternate;
+}
+@keyframes img1{
+    from{
+        filter: opacity(0);
+    }
+    to{
+        filter: opacity(1);
+        
+    }
+}
+
+#img2{
+    width: 22vw;
+    animation: img2 5s   infinite alternate;
+}
+@keyframes img2 {
+    from{
+        filter:brightness(100%)
+    }
+    to{
+        filter:brightness(20%);
+    }
+    
+}
+
+#img3{
+    width: 20vw;
+    animation: img3 3s infinite alternate;
+}
+@keyframes img3 {
+    from{
+        filter: sepia(1);
+    }
+    to{
+        filter: sepia(0);
+    }
+}
+.color2{
+    background-color: orange;
+    width:20vw;
+    height:20vh;
+    animation: color2 1s infinite alternate;
+}
+@keyframes color2{
+    0%{
+        background-color: orange;
+        transform: translateX(120px);
+    }
+    100%{background-color: rgb(251, 0, 251);
+        transform: translateX(0px);
+    }
+}
+.color3{
+    background-color: red;
+    width:20vw;
+    height:20vh;
+    animation: color3 1s infinite alternate;
+}
+@keyframes color3 {
+    0%{
+        background-color: red;
+        transform:translateY(20px);
+
+    }
+    33%{
+        background-color: green;
+        transform:translateY(0px);
+    }
+    69%{
+        background-color:yellow;
+        transform:translateY(20px);
+
+    }
+    100%{
+        background-color: aquamarine;
+        transform:translateY(0px);
+    }
+}
+#img4{
+    width: 20vw;
+    animation: img4 5s infinite alternate;
+
+}
+@keyframes img4 {
+    from{
+        filter: drop-shadow(100px 10px 0px #000000)
+    }
+    to{
+        filter: drop-shadow(30px 5px 10px yellow)
+
+    }
+}
+
+#img5{
+    width: 20vw;
+}
+
+
+@keyframes img5 {
+    from{
+
+    }
+}
+
+.color4{
+    width: 20vw;
+    height: 15vh;
+    background-color: blueviolet;
+    animation: color4 5s infinite alternate;
+}
+@keyframes color4 {
+    from{
+        width: 30px;
+    }
+    to{
+        width: 100px;
+    }
+}
+
+.color6{
+    width: 10vw;
+    height: 20vh;
+    background-color: cornflowerblue;
+    animation: color6 5s infinite alternate;
+}
+@keyframes color6 {
+    0%{
+        width: 10px;
+    }
+    33%{
+        width:70px;
+    }
+    69%{
+        width:30px;
+    }
+    100%{
+        width:200px;
+    }
+}
+#img5{
+    width: 22vw;
+    animation: img5 5s   infinite alternate;
+}
+@keyframes img5 {
+    from{
+        filter:brightness(100%)
+    }
+    to{
+        filter:brightness(20%);
+    }
+    
+}
+#img6{
+    width:22vw;
+    animation: img6 5s infinite alternate ;
+}
+@keyframes img6 {
+    from{
+        width:22vw;
+        filter: blur(0px);
+        filter: sepia(0);
+    }
+    to{
+        width:30vw;
+        filter: blur(5px);
+        filter: sepia(1);
+
+    }
+}
+
+.color7{
+    width:10vw;
+    height:10vh;
+    background-color: dodgerblue;
+    animation: color7 2.5s infinite alternate;
+}
+@keyframes color7 {
+    from{
+        width: 10vw;
+        height:10vh;
+        transform: translateX(0px);
+    }
+    to{
+        width: 20vw;
+        height:20vh;
+        transform: translateX(100px);
+
+    }
+}
+
+.color8{
+    width:10vw;
+    height:10vh;
+    background-color: khaki;
+    border-radius: 100%;
+    animation: color8 3s infinite alternate;
+}
+@keyframes color8 {
+    0%{
+        width:10vw;
+        height:10vh;
+        transform: translateY(20px);
+    }
+    25%{
+        width:5vw;
+        height:5vh;
+        transform: translateY(-20px);
+    }
+    50%{
+        width:10vw;
+        height:10vh;
+        transform: translateY(20px);
+    }
+    75%{
+        width:5vw;
+        height:5vh;
+        transform: translateY(-20px);
+    }
+    100%{
+        width:10vw;
+        height:10vh;
+        transform: translateY(20px);
+    }
+
+    
+}
+
