@@ -269,3 +269,37 @@
     
 }
 
+
+#img7{
+    width: 23vw;
+}
+#img7:hover{
+    width: 23vw;
+    animation:madara 2s infinite alternate;
+}
+@keyframes madara {
+    0%{
+        filter: drop-shadow(5px 5px 5px red);
+        filter:saturate(0%);
+        width: 23vw;
+    }
+    33%{
+        filter: drop-shadow(5px 5px 5px yellow);
+        filter:saturate(33%);
+        width: 25vw;
+
+    }
+    69%{
+        filter: drop-shadow(5px 5px 5px blue);
+        filter:saturate(69%);
+        width: 27vw;
+
+    }
+    100%{
+        filter: drop-shadow(5px 5px 5px green);
+        filter:saturate(100%);
+        width: 30vw;
+    }
+}
+
+
