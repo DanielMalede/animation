@@ -1,305 +1,106 @@
-.color{
-    border: 1px solid black;
-    width: 20vw;
-    height: 20vh;
-    animation: redblue 5s  infinite alternate;
-    animation: name duration timing-function delay iteration-count direction fill-mode;
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@keyframes redblue {
-    from{
-        background-color: blue;
-    }
-    to{
-        background-color: green;
-    }
+.div-grid{
+    display: grid;
+    grid-template-areas:
+    'header header header header'
+    'sidebar main main main'
+    'sidebar main main main'
+    'footer footer footer footer';
     
 }
 
-.color1{
-    border: 1px solid black;
-    width: 20vw;
-    height: 20vh;
-    animation: color1 5s   infinite alternate;
+.header{
+    width: 100vw;
+    height: 10vh;
+    grid-area: header;
+    background-color: #8FBDD3;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  
 }
 
-@keyframes color1 {
+.main{
+    width: 80vw;
+    height: 80vh;
+    grid-area: main;
+    background-color: #E4D1B9;
+    display: grid;
+    grid-template-areas:
+    'gitpage me'
+    'photos photos';
+    
+}
+.gitpage{
+    grid-area: gitpage;
+    background-color: #b7977e;
+}
+.me{
+    grid-area: me;
+    background-color: #c1a793;
+
+}
+.photos{
+    grid-area: photos;
+    background-color: #e3d1c3;
+
+}
+
+#mipic{
+    width: 15vw;
+    align-items: flex-end;
+    border-radius: 50%;
+}
+@keyframes mepic{
     0%{
-        background-color: blue;
+        filter: drop-shadow(2px 2px 5px #000000);
+        width: 15vw;
     }
     33%{
-        background-color: green;
+        filter: drop-shadow(2px 2px 5px black);
+        width: 15.5vw;
     }
     69%{
-        background-color:yellow;
+        filter: drop-shadow(2px 2px 5px #000000);
+        width: 17vw;
     }
     100%{
-        background-color: red;
+        filter: drop-shadow(2px 2px 5px black);
+        width: 15vw;
     }
-    
+}
+#mipic:hover{
+    animation: mepic 5s   alternate;
+    animation-fill-mode: forwards;
 }
 
-#img1{
+
+
+.sidebar{
     width: 20vw;
-    animation: img1 5s   infinite alternate;
+    height: 80vh;
+    grid-area: sidebar;
+    background-color: #BE8C63;
 }
-@keyframes img1{
-    from{
-        filter: opacity(0);
-    }
-    to{
-        filter: opacity(1);
-        
-    }
-}
-
-#img2{
-    width: 22vw;
-    animation: img2 5s   infinite alternate;
-}
-@keyframes img2 {
-    from{
-        filter:brightness(100%)
-    }
-    to{
-        filter:brightness(20%);
-    }
-    
+   
+.footer{
+    width: 100vw;
+    height: 10vh;
+    grid-area: footer;
+    background-color: #A97155;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
-#img3{
-    width: 20vw;
-    animation: img3 3s infinite alternate;
+.imghead{
+    width: 7vw;
+    align-items: flex-end;
 }
-@keyframes img3 {
-    from{
-        filter: sepia(1);
-    }
-    to{
-        filter: sepia(0);
-    }
-}
-.color2{
-    background-color: orange;
-    width:20vw;
-    height:20vh;
-    animation: color2 1s infinite alternate;
-}
-@keyframes color2{
-    0%{
-        background-color: orange;
-        transform: translateX(120px);
-    }
-    100%{background-color: rgb(251, 0, 251);
-        transform: translateX(0px);
-    }
-}
-.color3{
-    background-color: red;
-    width:20vw;
-    height:20vh;
-    animation: color3 1s infinite alternate;
-}
-@keyframes color3 {
-    0%{
-        background-color: red;
-        transform:translateY(20px);
-
-    }
-    33%{
-        background-color: green;
-        transform:translateY(0px);
-    }
-    69%{
-        background-color:yellow;
-        transform:translateY(20px);
-
-    }
-    100%{
-        background-color: aquamarine;
-        transform:translateY(0px);
-    }
-}
-#img4{
-    width: 20vw;
-    animation: img4 5s infinite alternate;
-
-}
-@keyframes img4 {
-    from{
-        filter: drop-shadow(100px 10px 0px #000000)
-    }
-    to{
-        filter: drop-shadow(30px 5px 10px yellow)
-
-    }
-}
-
-#img5{
-    width: 20vw;
-}
-
-
-@keyframes img5 {
-    from{
-
-    }
-}
-
-.color4{
-    width: 20vw;
-    height: 15vh;
-    background-color: blueviolet;
-    animation: color4 5s infinite alternate;
-}
-@keyframes color4 {
-    from{
-        width: 30px;
-    }
-    to{
-        width: 100px;
-    }
-}
-
-.color6{
-    width: 10vw;
-    height: 20vh;
-    background-color: cornflowerblue;
-    animation: color6 5s infinite alternate;
-}
-@keyframes color6 {
-    0%{
-        width: 10px;
-    }
-    33%{
-        width:70px;
-    }
-    69%{
-        width:30px;
-    }
-    100%{
-        width:200px;
-    }
-}
-#img5{
-    width: 22vw;
-    animation: img5 5s   infinite alternate;
-}
-@keyframes img5 {
-    from{
-        filter:brightness(100%)
-    }
-    to{
-        filter:brightness(20%);
-    }
-    
-}
-#img6{
-    width:22vw;
-    animation: img6 5s infinite alternate ;
-}
-@keyframes img6 {
-    from{
-        width:22vw;
-        filter: blur(0px);
-        filter: sepia(0);
-    }
-    to{
-        width:30vw;
-        filter: blur(5px);
-        filter: sepia(1);
-
-    }
-}
-
-.color7{
-    width:10vw;
-    height:10vh;
-    background-color: dodgerblue;
-    animation: color7 2.5s infinite alternate;
-}
-@keyframes color7 {
-    from{
-        width: 10vw;
-        height:10vh;
-        transform: translateX(0px);
-    }
-    to{
-        width: 20vw;
-        height:20vh;
-        transform: translateX(100px);
-
-    }
-}
-
-.color8{
-    width:10vw;
-    height:10vh;
-    background-color: khaki;
-    border-radius: 100%;
-    animation: color8 3s infinite alternate;
-}
-@keyframes color8 {
-    0%{
-        width:10vw;
-        height:10vh;
-        transform: translateY(20px);
-    }
-    25%{
-        width:5vw;
-        height:5vh;
-        transform: translateY(-20px);
-    }
-    50%{
-        width:10vw;
-        height:10vh;
-        transform: translateY(20px);
-    }
-    75%{
-        width:5vw;
-        height:5vh;
-        transform: translateY(-20px);
-    }
-    100%{
-        width:10vw;
-        height:10vh;
-        transform: translateY(20px);
-    }
-
-    
-}
-
-
-#img7{
-    width: 23vw;
-}
-#img7:hover{
-    width: 23vw;
-    animation:madara 2s infinite alternate;
-}
-@keyframes madara {
-    0%{
-        filter: drop-shadow(5px 5px 5px red);
-        filter:saturate(0%);
-        width: 23vw;
-    }
-    33%{
-        filter: drop-shadow(5px 5px 5px yellow);
-        filter:saturate(33%);
-        width: 25vw;
-
-    }
-    69%{
-        filter: drop-shadow(5px 5px 5px blue);
-        filter:saturate(69%);
-        width: 27vw;
-
-    }
-    100%{
-        filter: drop-shadow(5px 5px 5px green);
-        filter:saturate(100%);
-        width: 30vw;
-    }
-}
-
 
